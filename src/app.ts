@@ -10,7 +10,7 @@ const app = express()
 
 // middleware
 app.use(cors({
-    origin: ["http://localhost:3000"]
+    origin: ["https://mini-employee-directory-frontend-one.vercel.app", "http://localhost:3000"]
 }))
 app.use(express.json({ limit: "100mb" }))
 app.use(express.raw())
