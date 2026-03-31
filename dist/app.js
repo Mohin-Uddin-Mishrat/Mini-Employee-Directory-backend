@@ -13,7 +13,7 @@ const routes_1 = __importDefault(require("./routes"));
 const app = (0, express_1.default)();
 // middleware
 app.use((0, cors_1.default)({
-    origin: ["http://localhost:3000"]
+    origin: ["https://mini-employee-directory-frontend-one.vercel.app", "http://localhost:3000"]
 }));
 app.use(express_1.default.json({ limit: "100mb" }));
 app.use(express_1.default.raw());
